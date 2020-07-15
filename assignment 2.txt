@@ -1,0 +1,128 @@
+DAY 2
+ASSIGNMENT 2
+
+
+Missed methods of string and Array:
+
+
+1.SUBSTRING
+
+    * The substring() method extracts the characters from a string, 
+      between two specified indices, and returns the new sub string.
+
+    * This method extracts the characters in a string between "start" 
+      and "end", not including "end" itself.
+
+
+  Example:
+
+  <html>
+  <body>
+  <button onclick="substring()">Try it</button>
+  <p id="click"></p>
+  <script>
+  function substring() {
+    var str = "Hello world!";
+    var res = str.substring(1, 4);
+    document.getElementById("click").innerHTML = res;
+  }
+  </script>
+  </body>
+  </html>
+
+
+
+2.SPLICE
+
+
+  * This method adds/removes items to/from an array, and returns the removed item(s).
+
+
+  Example:
+
+
+  <html>
+  <body>
+  <button onclick="splice()">Try it</button>
+  <p id="click"></p>
+  <script>
+  var fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo").innerHTML = fruits;
+  function splice() 
+  {
+  fruits.splice(2, 0, "Lemon", "Kiwi");
+  document.getElementById("click").innerHTML = fruits;
+  }
+  </script>
+  </body>
+  </html>
+
+
+3.REPLACEALL
+
+
+  * This method replaces selected elements with new HTML elements.
+
+
+  Example:
+
+  <html>
+  <head>
+  <script>
+    $(document).ready(function()
+    {
+     $("button").click(function()
+      {
+       $("<h2>Hello world!</h2>").replaceAll("p");
+      });
+    });
+  </script>
+  </head>
+  <body>
+  <button>Replace all paragraph</button><br>
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+  <p>This is another paragraph.</p>
+  </body>
+  </html>
+
+
+
+4.REPLACE
+
+  * The replace() method searches a string for a specified value,or a regular expression,
+    and returns a new string where the specified values are replaced.
+
+
+  Example:
+  
+  <html>
+  <body>
+  <p id="click">This is Anand</p>
+  <button onclick="replace()">Try it</button>
+  <script>
+  function replace() 
+  {
+   var str = document.getElementById("Click").innerHTML; 
+   var res = str.replace("Anand", "Manoj");
+   document.getElementById("click").innerHTML = res;
+  }
+  </script>
+  </body>
+  </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
